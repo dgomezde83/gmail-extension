@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail Extension Starter",
+    "version": "1.0",
+    "description": "A basic Chrome extension that runs on Gmail.",
+    "permissions": [],
+    "content_scripts": [
+        {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["dist/contentScript.js"],
+        "run_at": "document_idle"
+        }
+    ],
+    "action": {}
+  }
